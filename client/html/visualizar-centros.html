@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/styles.css" />
+    <script src="https://kit.fontawesome.com/7615de3938.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="header">
@@ -48,74 +49,42 @@
 			</ul>
 		</div>
 
-    <div id="main-container">
-      <div id="form-alta">
-        <h2>Nueva asignatura:</h2>
-
-        <form action="#">
-          <label for="" class="lbl">Codigo:</label><br />
-          <input type="text" class="inp" /><br />
-
-          <label for="" class="lbl">Nombre:</label><br />
-          <input type="text" class="inp" /><br />
-
-          <label for="" class="lbl">Profesor:</label><br />
-          <select class="opt">
-  
-              <option >Analia Lourenco </option>
-              <option>Lourdes Borrajo </option>    
-  
-          </select><br>
-
-          <label for="" class="lbl">Titulacion:</label><br />
-          <select class="opt">
-    
-            <option>Master ESEI</option> 
-            <option >Grado en Ingenieria informatica </option>
-               
-        </select><br>
-
-          <label for="" class="lbl">Departamento:</label><br />
-          <select class="opt">
-
-            <option >Matematicas </option>
-            <option>Algoritmos</option>    
-
-        </select><br>
-
-        <label for="" class="lbl">Tipo:</label><br />
-        <select class="opt">
-
-          <option>Formacion basica </option>
-          <option>Obligatoria</option>    
-          <option>Optativa</option>    
-      </select><br>
-
-      <label for="" class="lbl">Numero de creditos:</label><br />
-      <input type="number" class="inp" /><br />
-
-      <label for="" class="lbl">Numero de horas:</label><br />
-      <input type="number" class="inp" /><br />
-
-      <label for="" class="lbl">Cuatrimestre:</label><br />
-      <select class="opt">
-
-        <option >1 </option>
-        <option>2</option>    
+    <div >
+      <h2>Gestion centros</h2>
+      <table class="tabla-gestion">
+        <tr>
+          <th>Nombre</th>
+          <th>Universidad</th>
+          <th>Ciudad</th>
+          <th>Responsable</th>     
+          <th>Año academico</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>ESEI</td>
+          <td>Universidad de Vigo</td>
+          <td>Ourense</td>
+          <td>Fran</td>        
+          <td>2019/2020</td>
+          <td>
+            <button class="gestion"><i class="fas fa-pencil-alt"></i></button>
+            <button class="gestion"><i class="fas fa-trash-alt"></i></button>
+          </td>
+        </tr>
+        <tr>
+          <td>EET</td>
+          <td>Universidad de Vigo</td>
+          <td>Vigo</td>
+          <td>Manuel</td>        
+          <td>2020/2021</td>
+          <td>
+            <button class="gestion"><i class="fas fa-pencil-alt"></i></button>
+            <button class="gestion"><i class="fas fa-trash-alt"></i></button>
+          </td>
+        </tr>
         
-    </select><br>
-
-    <label for="" class="lbl">Año academico:</label><br />
-      <select class="opt">
-
-        <option>2019/2020</option> 
-        <option >2020/21 </option>
-           
-    </select><br>
-         
-                <button id="c-usuario">Crear</button>
-        </form>
-      </div>
+       
+      </table>
     </div>
   </body>
 </html>

@@ -1,102 +1,176 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+  margin:0px;
+  padding:0px;
   font-family: "Poppins", sans-serif;
 }
 body {
   width: 100%;
   height: 100%;
 }
-/* header */
 
+.nav { 
+  display: inline-block;
+  flex-flow: row wrap ;
+  width: 100%;
+  background-color:#000;
+}
+#heade { 
+ 
+  width: 100%;
+  background-color:#000;
+}
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: rgb(26, 25, 25);
+
 }
 
-li {
-  float: left;
+.nav > li {
+  float:left;
 }
 
-li a {
-  display: block;
-  color: white;
-  font-weight: 500;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+.sbm{
+  background-color:#000;
+  color:#fff;
+  text-decoration:none;
+  padding:10px 12px;
+  display:block;
 }
 
-li a:hover {
-  background-color: #111;
+.nav li a:hover {
+  background-color:#434343;
 }
 
-#login {
-  background-color: rgb(0, 140, 255);
+.nav li ul {
+  display:none;
+  position:absolute;
+  min-width:140px;
 }
 
+.nav li:hover > ul {
+  display:block;
+}
+
+.nav li ul li {
+  position:relative;
+}
+
+.nav li ul li ul {
+  right:-120px;
+  top:0px;
+}
+#iniciar-ses {
+   background-color: rgb(0, 140, 255);
+}
+#in-ses{
+  text-decoration:none;
+  padding:10px 12px;
+  display:block;
+  color:#fff;
+}
 /* Cuando un suario esta logueado */
 
-#logueado{
-    color: white;
-    text-align: center;
-    padding: 14px 36px;
+#logueado {
+  color: white;
+  text-align: center;
+  padding: 14px 36px;
 }
 
 /* Alta usuario */
-#main-container{
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    width: 100%;
-    height: 100%;  
-    
+#main-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
-#form-alta{
-   margin-top: 100px;
-    width: 540px;
-    padding: 20px;
-    border: 1px solid gray;
-    border-radius: 8px;
+#form-alta {
+  margin-top: 60px;
+  width: 540px;
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 8px;
 }
-#c-usuario{
-    width: 120px;
-    height: 35px;
-    margin-top: 20px;
-    background-color: rgb(53, 130, 245);
-    border: rgb(53, 130, 245);
-    font-size: 16px;
-    color: white;
-    border-radius: 6px;
-    float: right;
+#c-usuario {
+  width: 120px;
+  height: 35px;
+  margin-top: 20px;
+  background-color: rgb(53, 130, 245);
+  border: rgb(53, 130, 245);
+  font-size: 16px;
+  color: white;
+  border-radius: 6px;
+  float: right;
 }
 
-.inp{
-    margin-top: 4px;
-    margin-bottom: 4px;
-    width: 500px;
-    height: 35px;
-    border-radius: 4px;
-    font-size: 16px;
-    border: 2px solid rgb(34, 34, 34);
+.inp {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  width: 500px;
+  height: 35px;
+  border-radius: 4px;
+  font-size: 16px;
+  border: 2px solid rgb(34, 34, 34);
 }
-.lbl{
-    font-size: 18px;
+.lbl {
+  font-size: 18px;
 }
 /* pagina de nueva asignatura */
 
 select {
-    width: 500px;
-    height: 35px;
+  width: 500px;
+  height: 35px;
 }
 select:focus {
-    min-width: 500px;
-    width: auto;
-    height: 35px;
-}    
+  min-width: 500px;
+  width: auto;
+  height: 35px;
+}
+
+/* Tabla de gestion */
+
+.tabla-gestion {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+th {
+  background-color: #dddddd;
+  border: 1px solid #ffff;
+}
+
+/* botones tablas gestion */
+.gestion {
+  background-color: #ffff;
+  border: 0px;
+  width: 20px;
+}
+.gestion:hover {
+  cursor: pointer;
+}
+.fa-trash-alt {
+  font-size: 18px;
+  color: rgb(243, 57, 57);
+}
+.fa-pencil-alt {
+  font-size: 18px;
+  color: rgb(34, 81, 238);
+}
+
+.fa-trash-alt:hover,
+.fa-pencil-alt:hover {
+  color: black;
+}
+

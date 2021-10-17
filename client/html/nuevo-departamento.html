@@ -7,30 +7,54 @@
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
-    <nav id="menu">
-      <ul>
-        <li><a class="active" href="index.html">Inicio</a></li>
-        <li><a  href="#profesorado">Profesorado</a></li>
-        <li>
-          <a class="active" href="#">Administrar</a>
-          <ul>
-            <li><a  href="index.html">Crear usuario</a></li>
-            <li><a  href="#profesorado">Gestionar usuarios</a></li>
-            <li><a  href="#">Crear asignatura</a></li>
-            <li><a  href="#profesorado">Gestionar asignatura</a></li>
-            <li><a  href="#">Crear departamento</a></li>
-            <li><a  href="#profesorado">Gestionar departamento</a></li>
+    <div id="header">
+			<ul class="nav">
+				<li><a href="" class="sbm">Inicio</a></li>       
+				<li><a href="" class="sbm">Gestion</a>
+					<ul>
+            <li><a href="" class="sbm">Crear recursos</a>
+            <ul>
+						<li><a href="alta-centro.html" class="sbm">Crear centro</a></li>
+						<li><a href="alta-grupo.html" class="sbm">Crear grupo</a></li>
+						<li><a href="alta-horario.html" class="sbm">Crear horario</a></li>
+            <li><a href="alta-titulacion.html" class="sbm">Crear titulacion</a></li>
+            <li><a href="nuevo-edificio.html" class="sbm">Crear edificio</a></li>
+            <li><a href="nueva-asignatura.html" class="sbm">Crear asignatura</a></li>
+            <li><a href="nuevo-departamento.html" class="sbm">Crear departamento</a></li>      
+            <li><a href="alta-espacio.html" class="sbm">Crear espacio</a></li>        
+            <li><a href="alta.html" class="sbm">Crear usuario</a></li>
           </ul>
-        </li>
-        <li style="float: right" id="logueado">Admin</li>
-      </ul>
-    </div>
-
+						
+						</li>
+            <li><a href="" class="sbm">Gestionar recursos</a>
+              <ul>
+              <li><a href="visualizar-centros.html" class="sbm">Gestionar centos </a></li>
+              <li><a href="" class="sbm">Gestionar grupos</a></li>             
+              <li><a href="visualizar-titulaciones.html" class="sbm">Gestionar titulaciones</a></li>
+              <li><a href="visualizar-edificios.html" class="sbm">Gestionar edificios</a></li>              
+              <li><a href="visualizar-asignaturas.html" class="sbm">Gestionar asignaturas</a></li>
+              <li><a href="visualizar-departamentos.html" class="sbm">Gestionar departamentos</a></li>
+              <li><a href="visualizar-usuarios.html" class="sbm">Gestionar usuarios</a></li>
+              <li><a href="visualizar-espacio.html" class="sbm">Gestionar espacios</a></li>
+              <li><a href="asignar-roles.html" class="sbm">Gestionar permisos usuarios</a></li>
+            </ul>
+              
+              </li>
+					</ul>
+          
+				</li>
+        <li id="iniciar-ses" style="float:right" ><a href="login.html" id="in-ses">Admin</a></li>
+				
+			</ul>
+		</div>
     <div id="main-container">
       <div id="form-alta">
         <h2>Nuevo departamento:</h2>
 
         <form action="#">
+          <label for="" class="lbl">Codigo:</label><br />
+          <input type="text" class="inp" /><br />
+
           <label for="" class="lbl">Nombre:</label><br />
           <input type="text" class="inp" /><br />
 
@@ -40,24 +64,16 @@
             <option>Esei </option>
             <option>Empresariales</option>         
 
-        </select><br>
-         
+          </select><br>
 
-          <label for="" class="lbl">Area:</label><br />
+          <label for="" class="lbl">Año academico:</label><br />
           <select class="opt">
 
-            <option>Inteligencia Artificial </option>
-            <option>Lenguajes</option>         
+            <option>2019/2020 </option>
+            <option>2020/2021</option>         
 
-        </select><br>
-        <label for="" class="lbl">Profesor:</label><br />
-        <select class="opt">
-
-            <option >Analia Lourenco </option>
-            <option>Lourdes Borrajo </option>    
-
-        </select><br>
-          <button id="c-usuario">Crear</button>
+        </select><br>       
+         <button id="c-usuario">Crear</button>
         </form>
       </div>
     </div>
