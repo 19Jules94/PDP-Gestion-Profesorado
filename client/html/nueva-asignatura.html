@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <nav id="menu">
+      <ul>
+        <li><a class="active" href="index.html">Inicio</a></li>
+        <li><a  href="#profesorado">Profesorado</a></li>
+        <li>
+          <a class="active" href="#">Administrar</a>
+          <ul>
+            <li><a  href="index.html">Crear usuario</a></li>
+            <li><a  href="#profesorado">Gestionar usuarios</a></li>
+            <li><a  href="#">Crear asignatura</a></li>
+            <li><a  href="#profesorado">Gestionar asignatura</a></li>
+            <li><a  href="#">Crear departamento</a></li>
+            <li><a  href="#profesorado">Gestionar departamento</a></li>
+          </ul>
+        </li>
+        <li style="float: right" id="logueado">Admin</li>
+      </ul>
+    </div>
+
+    <div id="main-container">
+      <div id="form-alta">
+        <h2>Nueva asignatura:</h2>
+
+        <form action="#">
+          <label for="" class="lbl">Nombre:</label><br />
+          <input type="text" class="inp" /><br />
+
+          <label for="" class="lbl">Departamento:</label><br />
+          <select class="opt">
+
+            <option >Matematicas </option>
+            <option>Algoritmos</option>    
+
+        </select><br>
+
+          <label for="" class="lbl">Area:</label><br />
+          <select class="opt">
+
+            <option>Inteligencia Artificial </option>
+            <option>Lenguajes</option>         
+
+        </select><br>
+
+        <label for="" class="lbl">Tipo:</label><br />
+        <select class="opt">
+
+          <option >Formacion basica </option>
+          <option>Obligatoria</option>    
+          <option>Optativa</option>    
+      </select><br>
+
+      <label for="" class="lbl">Numero de creditos:</label><br />
+      <input type="number" class="inp" /><br />
+
+      <label for="" class="lbl">Cuatrimestre:</label><br />
+      <select class="opt">
+
+        <option >Primero </option>
+        <option>Segundo</option>    
+        
+    </select><br>
+
+    <label for="" class="lbl">Curso:</label><br />
+    <select class="opt">
+
+      <option>Primero </option>
+      <option>Segundo</option>    
+      <option>Tercero</option>  
+      <option>Cuarto</option>  
+  </select><br>
+      
+        <label for="" class="lbl">Profesor:</label><br />
+        <select class="opt">
+
+            <option >Analia Lourenco </option>
+            <option>Lourdes Borrajo </option>    
+
+        </select><br>
+          <button id="c-usuario">Crear</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
